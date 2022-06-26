@@ -65,7 +65,7 @@ function draw() {
 
 
 function collisionWithBoat(index) {
-  for (var i = 0; i < cesta.length; i++) {
+ 
     if (balls[index] !== undefined) {
       var collision = Matter.SAT.collides(balls[index].body, cesta.body);
 
@@ -76,7 +76,7 @@ function collisionWithBoat(index) {
         Matter.World.remove(world, balls[index].body);
         delete balls[index];
       }
-    }
+    
   }
 }
 
